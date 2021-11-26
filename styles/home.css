@@ -26,13 +26,13 @@ img {
 .buttons {
   display: flex;
   gap: 17px;
+
+  margin-top: 59px;
 }
 
 button {
   width: 200px;
   height: 40px;
-
-  margin-top: 60px;
 
   border: none;
   border-radius: 10px;
@@ -83,7 +83,7 @@ h1 {
   height: 435px;
   background: #ea916b;
 
-  margin-top: 29px;
+  margin-top: 31px;
 
   padding: 40px;
 
@@ -102,4 +102,19 @@ p {
   font-weight: 300;
 
   line-height: 24px;
+}
+
+@media (max-width: 805px) {
+  .content {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .buttons {
+    flex-direction: column;
+
+    gap: 10px;
+  }
 }
